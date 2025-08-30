@@ -27,9 +27,21 @@ export default function StepTwo() {
           onChange={(e) => setAddress(e.target.value)}
           value={address}
         />
-        <button className="bg-black text-white py-2 px-4 rounded-md w-full sm:w-auto">
-          Next
-        </button>
+        <div className="flex gap-2">
+          <button
+            type="button"
+            onClick={() => navigate("/")}
+            className="bg-black text-white py-2 px-4 rounded-md w-full sm:w-auto"
+          >
+            Prev
+          </button>
+          <button
+            type="submit"
+            className="bg-black text-white py-2 px-4 rounded-md w-full sm:w-auto"
+          >
+            Next
+          </button>
+        </div>
       </form>
     </div>
   );
